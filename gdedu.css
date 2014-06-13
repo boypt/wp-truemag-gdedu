@@ -1,0 +1,140 @@
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	background-image: url(images/nav_bg.gif);
+	background-repeat: repeat-x;
+}
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+.main-navigation li a {
+	float:left;
+	display:block;
+	padding-left:6px;
+	height:44px;
+	background:url(images/menu_on_left.gif) no-repeat left top;
+	cursor:pointer;
+	text-decoration:none;
+}
+.main-navigation li a span {
+	float:left;
+	line-height:44px;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-decoration:none;
+	background-image: url(images/menu_on_right.gif);
+	background-repeat: no-repeat;
+	background-position: right 44px;
+	padding-right: 14px;
+	padding-left: 10px;
+}
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+.main-navigation ul ul a {
+	width: 200px;
+}
+.main-navigation ul ul li {
+}
+.main-navigation li:hover > a {
+	background-position:left 100%;
+}
+.main-navigation li:hover > a span {
+	background-position:right 100%;
+	color:#333333;
+	text-decoration:none;
+	padding-right: 14px;
+	padding-left: 10px;
+}
+.main-navigation ul ul :hover > a {
+}
+.main-navigation ul ul a:hover {
+}
+.main-navigation ul li:hover > ul {
+	left: auto;
+}
+.main-navigation ul ul li:hover > ul {
+	left: 100%;
+}
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+	background-position:left 100%;
+}
+.main-navigation .current_page_item a span,
+.main-navigation .current-menu-item a span{
+	background-position:right 100%;
+	color:#333333;
+	text-decoration:none;
+	padding-right: 14px;
+	padding-left: 10px;
+}
+
+
+/* Frontpage Slider */
+.pptbox_slider {
+    width:620px;
+    height:325px;
+    float:left;
+}
+.pptbox_txt {
+    width:368px;
+    height:325px;
+    margin-left:10px;
+    padding-left:5px;
+    float:left;
+    background-color:#eee;
+}
+
+.pptbox_txt h3 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.pptbox_txt p {
+	font-size: 12px;
+    margin-bottom: 12px;
+}
+
+
+/* Fix for truemag */
+
+#body div.container {
+    max-width: 1000px;
+    margin:0 auto;
+    padding:0;
+}
+
+button,input[type='submit'], .dark-div .light-div button,.dark-div .light-div input[type='submit']{
+	background:#479E15;
+	border:solid 1px #2F7A05; 
+	color:#fff;
+}
+
+textarea:focus, input[type='text']:focus, input[type='url']:focus, input[type='email']:focus, input[type='number']:focus,input[type='password']:focus,select:focus{
+	border:solid 1px #2F7A05; 
+}
+
+.light-button {
+    border: solid 1px #2F7A05;
+    background-color: #448221;
+}
