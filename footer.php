@@ -19,6 +19,8 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<!--foo -->
 <?php wp_footer(); ?>
+<!--foo -->
 </body>
 </html>

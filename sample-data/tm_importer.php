@@ -42,9 +42,11 @@ function tm_importer() {
 				if( $menu->name == 'Main Navigation' ) {
 					$locations['main-navigation'] = $menu->term_id;
 				}
+                /*
 				if( $menu->name == 'Footer Navigation' ) {
 					$locations['footer-navigation'] = $menu->term_id;
 				}
+                 */
 			}
 		}
 

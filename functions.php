@@ -277,7 +277,7 @@ function cactusthemes_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'main-navigation', __( 'Main Navigation', 'cactusthemes' ) );
-	register_nav_menu( 'footer-navigation', __( 'Footer Navigation', 'cactusthemes' ) );
+	//register_nav_menu( 'footer-navigation', __( 'Footer Navigation', 'cactusthemes' ) );
 
 	// This theme uses a custom image size for featured images, displayed on "standard" posts.
 	add_theme_support( 'post-thumbnails' );
@@ -426,6 +426,7 @@ function cactusthemes_widgets_init() {
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	));
+    /*
 	register_sidebar( array(
 		'name' => __( 'Footer Sidebar', 'cactusthemes' ),
 		'id' => 'footer_sidebar',
@@ -444,6 +445,7 @@ function cactusthemes_widgets_init() {
 		'before_title' => '<h2 class="widget-title maincolor1">',
 		'after_title' => '</h2>',
 	));
+     */
 	register_sidebar( array(
 		'name' => __( 'Blog Sidebar', 'cactusthemes' ),
 		'id' => 'blog_sidebar',
@@ -699,7 +701,7 @@ if(!function_exists('tm_update_fb_comment')){
 	}
 }
 
-add_action('wp_footer', 'tm_update_fb_comment', 100);
+//add_action('wp_footer', 'tm_update_fb_comment', 100);
 //ajax update disqus count
 if(!function_exists('tm_disqus_update')){
 	function tm_disqus_update(){
