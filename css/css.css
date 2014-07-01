@@ -1003,34 +1003,24 @@ BODY {
 
 .mum_1     {
 	background-color: #f54545;
-	height: 18px;
-	width: 18px;
-	line-height: 18px;
-	text-align: center;
-	color: #FFFFFF;
 }
 .mum_2     {
 	background-color: #ff8547;
-	height: 18px;
-	width: 18px;
-	line-height: 18px;
-	text-align: center;
-	color: #FFFFFF;
 }
 .mum_3     {
-	background-color: #8eb9f5;
-	height: 18px;
-	width: 18px;
-	line-height: 18px;
-	text-align: center;
-	color: #FFFFFF;
+	background-color: #F5B38E;
 }
 .mum_4     {
+	background-color: #8eb9f5;
+}
+.rank-index {
 	height: 18px;
 	width: 18px;
 	line-height: 18px;
 	text-align: center;
-	color: #666;
+	font-family: serif;
+	font-weight: bold;
+	color: black;
 }
 .searchbox{
 	width:330px;

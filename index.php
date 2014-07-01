@@ -1,8 +1,13 @@
 <?php 
 get_header();
 
-get_template_part('frontpage-slider');
+$orderby = get_query_var('orderby');
+$paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 
+//if(!is_tag() && ($paged==1)){
+if (is_home() && ($paged==1) && empty($orderby)) {
+	get_template_part('frontpage-slider');
+}
 
 $default_style = ot_get_option('default_listing_layout');
 if($default_style =='style-list-1'){?>
@@ -73,10 +78,12 @@ if($style=='blog'&&(ot_get_option('show_blog_title',1)||!is_home())&&!is_author(
 								if(is_home()){
 									if(ot_get_option('show_blog_title','1')){?>
 										<h2 class="light-title"><?php global $global_title; echo $global_title ?></h2>
+
 									<?php }
 								}elseif(!is_author()){ ?>
-								<h2 class="light-title"><?php global $global_title; echo $global_title ?></h2>
+									<h2 class="light-title"><?php global $global_title; echo $global_title ?></h2>
 								 <?php }?>
+								 <div class="tags-selector"></div>
                                 <?php get_template_part('loop-filter'); ?>
                             </div>
                             <?php }?>

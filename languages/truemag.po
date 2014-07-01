@@ -50,11 +50,11 @@ msgstr ""
 #: Plugins/truemag-movie/tm-ajax-load-posts.php:74
 #: truemag/header-single-player.php:173
 msgid "More"
-msgstr ""
+msgstr "浏览更多视频"
 
 #: Plugins/truemag-movie/tm-ajax-load-posts.php:75
 msgid "Loading posts"
-msgstr ""
+msgstr "正在加载文章"
 
 #: Plugins/truemag-movie/tm-like-post.php:14
 #: Plugins/truemag-movie/tm-like-post.php:72
@@ -95,7 +95,7 @@ msgstr ""
 #: Plugins/truemag-movie/tm-like-post.php:481
 #: Plugins/truemag-movie/widget-most-like.php:131 truemag/loop-filter.php:18
 msgid "Likes"
-msgstr ""
+msgstr "按点赞数"
 
 #: Plugins/truemag-movie/tm-like-post.php:497
 #, php-format
@@ -194,7 +194,7 @@ msgstr ""
 #: truemag/option-tree/includes/ot-meta-box-api.php:186
 #: truemag/option-tree/includes/ot-settings-api.php:606
 msgid "Title"
-msgstr ""
+msgstr "按标题名"
 
 #: Plugins/truemag-movie/widget-most-like.php:58
 msgid "Number of posts to show"
@@ -225,7 +225,7 @@ msgstr ""
 #: Plugins/truemag-movie/widget-most-view.php:71
 #: truemag/header-single-player.php:313 truemag/loop-filter.php:16
 msgid "Views"
-msgstr ""
+msgstr "按浏览数"
 
 #: Plugins/truemag-movie/widget-most-view.php:122
 #: Plugins/truemag-movie/widget-popular-video.php:166
@@ -269,7 +269,7 @@ msgstr ""
 #: Plugins/truemag-shortcodes/js_composer/composer/lib/params/loop/loop.php:163
 #: truemag/widget-views/shortcode-asf.view.php:89
 msgid "Order"
-msgstr ""
+msgstr "排行次序"
 
 #: Plugins/truemag-movie/widget-most-view.php:159
 msgid "From most viewed to less viewed"
@@ -400,7 +400,7 @@ msgstr ""
 
 #: Plugins/truemag-movie/widget-related-video.php:8
 msgid "Related News"
-msgstr ""
+msgstr "相关课件视频"
 
 #: Plugins/truemag-movie/widget-related-video.php:10
 msgid "TM-Related News/Video"
@@ -416,13 +416,13 @@ msgstr ""
 #: Plugins/truemag-shortcodes/shortcodes/related-format.php:87
 #: Plugins/truemag-shortcodes/shortcodes/related-video.php:79
 msgid "Video"
-msgstr ""
+msgstr "视频"
 
 #: Plugins/truemag-movie/widget-related-video.php:116
 #: Plugins/truemag-shortcodes/shortcodes/related-format.php:87
 #: Plugins/truemag-shortcodes/shortcodes/related-video.php:79
 msgid "News"
-msgstr ""
+msgstr "新闻"
 
 #: Plugins/truemag-movie/widget-related-video.php:117
 msgid "Both"
@@ -443,7 +443,7 @@ msgstr ""
 #: Plugins/truemag-shortcodes/shortcodes/related-video.php:94
 #: truemag/loop-filter.php:14
 msgid "Date"
-msgstr ""
+msgstr "按日期"
 
 #: Plugins/truemag-movie/widget-related-video.php:134
 #: Plugins/truemag-shortcodes/js_composer/composer/lib/params/loop/loop.php:230
@@ -500,7 +500,7 @@ msgstr ""
 
 #: Plugins/truemag-movie/widget-top-cat.php:75
 msgid "Order By:"
-msgstr ""
+msgstr "排列方式："
 
 #: Plugins/truemag-movie/widget-top-cat.php:77
 msgid "Number of Post"
@@ -508,7 +508,7 @@ msgstr ""
 
 #: Plugins/truemag-movie/widget-top-cat.php:82
 msgid "Order:"
-msgstr ""
+msgstr "排序："
 
 #: Plugins/truemag-movie/widget-top-cat.php:84
 msgid "DESC"
@@ -3247,7 +3247,7 @@ msgstr ""
 
 #: Plugins/truemag-shortcodes/js_composer/composer/lib/params/loop/loop.php:162
 msgid "Order By"
-msgstr ""
+msgstr "排序依据"
 
 #: Plugins/truemag-shortcodes/js_composer/composer/lib/params/loop/loop.php:164
 #: Plugins/truemag-shortcodes/js_composer/config/map.php:793
@@ -4856,7 +4856,7 @@ msgstr ""
 #: Plugins/truemag-shortcodes/shortcodes/smart-content.php:214
 #: truemag/widget-views/shortcode-asf.view.php:80
 msgid "Order by"
-msgstr ""
+msgstr "排序依据"
 
 #: Plugins/truemag-shortcodes/js_composer/config/map.php:882
 #: Plugins/truemag-shortcodes/js_composer/config/map.php:994
@@ -5809,7 +5809,7 @@ msgstr ""
 #: Plugins/truemag-shortcodes/shortcodes/related-post.php:59
 #: truemag/loop-filter.php:20
 msgid "Comments"
-msgstr ""
+msgstr "按评论数"
 
 #: Plugins/truemag-shortcodes/shortcodes/post_carousel.php:117
 msgid "Posts Carousel"
@@ -6028,7 +6028,7 @@ msgstr ""
 #: truemag/single.php:96
 #: truemag/page-templates/demo-shortcode-sidebar-left.php:51
 msgid "About The Author"
-msgstr ""
+msgstr "关于授课老师"
 
 #: truemag/comments.php:28
 msgid "Your comment ..."
@@ -6057,25 +6057,25 @@ msgstr ""
 #: truemag/content-single.php:54 truemag/old-single-video.php:159
 #: truemag/single-inbox.php:417
 msgid "Category:"
-msgstr ""
+msgstr "分类："
 
 #: truemag/content-single.php:58 truemag/old-single-video.php:160
 #: truemag/single-inbox.php:421
 msgid "Tags:"
-msgstr ""
+msgstr "标签："
 
 #: truemag/content-single.php:77 truemag/loop-blog.php:26
 msgid "0 Comments"
-msgstr ""
+msgstr "没有评论"
 
 #: truemag/content-single.php:77 truemag/loop-blog.php:26
 msgid "1 Comment"
-msgstr ""
+msgstr "1条评论"
 
 #: truemag/footer.php:66 truemag/functions.php:618
 #: truemag/header-navigation.php:39 truemag/header-navigation.php:54
 msgid "Home"
-msgstr ""
+msgstr "主页"
 
 #: truemag/functions.php:126
 msgid "Social informations"
@@ -6226,7 +6226,7 @@ msgstr ""
 
 #: truemag/functions.php:471
 msgid "SEARCH"
-msgstr ""
+msgstr "搜索视频"
 
 #: truemag/functions.php:620
 msgid "Search Results for"
@@ -6258,7 +6258,7 @@ msgstr ""
 
 #: truemag/search.php: 80
 msgid "No results found"
-msgstr ""
+msgstr "没有找到结果"
 
 #: truemag/header-single-player.php:225 truemag/header-single-player.php:256
 #: truemag/single-inbox.php:217
@@ -6287,29 +6287,29 @@ msgstr ""
 
 #: truemag/search.php:24
 msgid "Search result: "
-msgstr ""
+msgstr "搜索结果："
 
 #: truemag/single-inbox.php:280
 msgid "More videos"
-msgstr ""
+msgstr "更多视频"
 
 #: truemag/single-inbox.php:293
 msgid "Views  "
-msgstr ""
+msgstr "浏览数 "
 
 #: truemag/single-video.php:67 truemag/single-video.php:123
 #: truemag/single.php:127
 msgid "Next"
-msgstr ""
+msgstr "前一篇"
 
 #: truemag/single-video.php:80 truemag/single-video.php:134
 #: truemag/single.php:115
 msgid "Previous"
-msgstr ""
+msgstr "下一篇"
 
 #: truemag/single-video.php:164
 msgid "Related Videos"
-msgstr ""
+msgstr "相关课件视频"
 
 #: truemag/skeleton-core.php:87 truemag/inc/core/skeleton-core.php:86
 msgid "Install Required &amp; Recommended Plugins"
@@ -7068,19 +7068,19 @@ msgstr ""
 
 #: truemag/widget-views/shortcode-asf.view.php:82
 msgid "Alphabetic"
-msgstr ""
+msgstr "按字母循序排列"
 
 #: truemag/widget-views/shortcode-asf.view.php:83
 msgid "Updated date"
-msgstr ""
+msgstr "按更新时间排列"
 
 #: truemag/widget-views/shortcode-asf.view.php:91
 msgid "Asc"
-msgstr ""
+msgstr "升序"
 
 #: truemag/widget-views/shortcode-asf.view.php:92
 msgid "Desc"
-msgstr ""
+msgstr "降序"
 
 #: truemag/widget-views/shortcode-asf.view.php:103
 msgid "Any tag"

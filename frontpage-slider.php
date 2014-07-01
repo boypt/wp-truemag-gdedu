@@ -9,9 +9,6 @@
 ?>
 
 <div class="banner"></div>
-<div class="nav_1">
-  <div class="cen"><a href="#">活动首页</a> <a href="#"> 活动规则</a> <a href="#">作品要求</a> <a href="#">新闻动态 </a> <a href="#"> 奖项设置</a> <span> <a href="#">上传作品</a> </span> </div>
-</div>
 <div class="ind_1">
   <table border="0" cellspacing="0">
     <tr>
@@ -56,7 +53,7 @@
       <p>优秀剧本将在《英语周报》发表。详情<a href="#" class="r">【在线答疑】 </a></p>
       <h3>主办方：</h3>
       <p>广东省教育厅<br/>中国电信股份有限公司广东分公司</p>
-      <p><div align="center"><a href="#"><img src="<?php echo get_template_directory_uri() . "/images/ind_but1.png"; ?>" border="0"></a><a href="#"><img src="<?php echo get_template_directory_uri() . "/images/ind_but2.png";?>" border="0"></a></div></p>
+      <p><div align="center"><a href="http://edu.365diy.cn/video/uploadVideo.jsp"><img src="<?php echo get_template_directory_uri() . "/images/ind_but1.png"; ?>" border="0"></a><a href="http://edu.365diy.cn/UserAction.action"><img src="<?php echo get_template_directory_uri() . "/images/ind_but2.png";?>" border="0"></a></div></p>
     </div>
 </div>
 

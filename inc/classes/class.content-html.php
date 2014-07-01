@@ -1,4 +1,7 @@
 <?php
+
+if (!defined('WIDGET_THUMBNAIL_SIZE')) define('WIDGET_THUMBNAIL_SIZE', 'thumbnail');
+
 class CT_ContentHtml{
 	/* 
 	 * Get item for trending, popular
@@ -13,7 +16,7 @@ class CT_ContentHtml{
 					  <div class="item-thumbnail">
 						<a href="'.get_permalink().'" title="'.strip_tags(get_the_title()).'">';
 						if(has_post_thumbnail()){
-                                    $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'thumb_139x89', true);
+                                    $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),WIDGET_THUMBNAIL_SIZE, true);
                                 }else{
                                     $thumbnail[0]=function_exists('tm_get_default_image')?tm_get_default_image():'';
 									$thumbnail[1]=520;
@@ -33,11 +36,11 @@ class CT_ContentHtml{
 					<h2 class="rt-article-title"> <a href="'.get_permalink().'" title="'.strip_tags(get_the_title()).'">'.get_the_title().'</a></h2>
 					<div class="item-meta">';
 				  if($show_view!='hide_v'){
-					$html.= tm_html_video_meta('view').'<br />';}
+					$html.= tm_html_video_meta('view');}
 				  if($show_com!='hide_c'){
-					$html.= tm_html_video_meta('comment').'<br />';}
+					$html.= tm_html_video_meta('comment');}
 				  if($show_likes!='hide_l'){
-					$html.= tm_html_video_meta('like').'<br />';
+					$html.= tm_html_video_meta('like');
 				  }
 				  $html.= '
 				  	</div>
@@ -595,7 +598,7 @@ class CT_ContentHtml{
 						<div class="item-thumbnail">
 							  <a href="'.get_permalink($post->post_id).'" title="'.the_title_attribute('echo=0').'">';
 							  if(has_post_thumbnail($post->post_id)){
-										  $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_id),'thumb_139x89', true);
+										  $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_id),WIDGET_THUMBNAIL_SIZE, true);
 									  }else{
 										  $thumbnail[0]=function_exists('tm_get_default_image')?tm_get_default_image():'';
 										  $thumbnail[1]=520;
@@ -613,13 +616,13 @@ class CT_ContentHtml{
 						  <h2 class="rt-article-title"> <a href="'.get_permalink($post->post_id).'" title="'.get_the_title($post->post_id).'">'.get_the_title($post->post_id).'</a></h2>
 						  <div class="item-meta">';
 						  if($show_view!='hide_v'){
-								$widget_data .= '<span class="pp-icon"><i class="fa fa-eye"></i> '.get_post_meta($post->post_id, '_count-views_all', true).'</span><br>';
+								$widget_data .= '<span class="pp-icon"><i class="fa fa-eye"></i> '.get_post_meta($post->post_id, '_count-views_all', true).'</span>';
 						  }
 						  if($show_likes!='hide_l' &&function_exists('GetWtiLikeCount')){
-								$widget_data .= '<span class="pp-icon iclike"><i class="fa fa-thumbs-up"></i> '.$like_count.'</span><br>';
+								$widget_data .= '<span class="pp-icon iclike"><i class="fa fa-thumbs-up"></i> '.$like_count.'</span>';
 						  }
 						  if($show_com!='hide_c'){
-								$widget_data .= '<span class="pp-icon"><i class="fa fa-comment"></i> '.get_comments_number($post->post_id).'</span><br>';			
+								$widget_data .= '<span class="pp-icon"><i class="fa fa-comment"></i> '.get_comments_number($post->post_id).'</span>';			
 						  }
 						  $widget_data .= '
 							</div>
@@ -642,7 +645,7 @@ class CT_ContentHtml{
 					<div class="item-thumbnail">
 						 <a href="'.get_permalink($post->post_id).'" title="'.strip_tags(get_the_title()).'">';
 							  if(has_post_thumbnail($post->post_id)){
-										  $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_id),'thumb_139x89', true);
+										  $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_id),WIDGET_THUMBNAIL_SIZE, true);
 									  }else{
 										  $thumbnail[0]=function_exists('tm_get_default_image')?tm_get_default_image():'';
 										  $thumbnail[1]=520;
@@ -676,7 +679,7 @@ class CT_ContentHtml{
 					  <div class="item-thumbnail">
 						<a href="'.get_permalink().'" title="'.strip_tags(get_the_title()).'">';
 						if(has_post_thumbnail()){
-                                    $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'thumb_139x89', true);
+                                    $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),WIDGET_THUMBNAIL_SIZE, true);
                                 }else{
                                     $thumbnail[0]=function_exists('tm_get_default_image')?tm_get_default_image():'';
 									$thumbnail[1]=520;

@@ -1,5 +1,6 @@
 <?php
 
+if (!defined('RELATED_THUMBNAIL_SIZE')) define('RELATED_THUMBNAIL_SIZE', 'thumbnail');
 
 function parse_tm_related_post_func($atts, $content){
 	$title 			= isset($atts['title']) ? $atts['title'] : '';	
@@ -15,7 +16,7 @@ function parse_tm_related_post_func($atts, $content){
 	}
 	$item_loop_video = new CT_ContentHelper;	
 	$the_query = $item_loop_video->tm_get_related_posts($posttypes, $tags, $postformat, $count, $orderby, $args = array());
-	$thumb='thumb_196x126';
+	$thumb=RELATED_THUMBNAIL_SIZE;
 	$show_title= 1;
 	$show_meta= $show_exceprt=0;
 	$item_video = new CT_ContentHtml; 

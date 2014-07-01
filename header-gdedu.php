@@ -39,3 +39,32 @@
 
 
 	<div id="content" class="site-content">
+
+<?php
+		global $global_title;
+		if(is_category()){
+			$global_title = single_cat_title('',false);
+		}elseif(is_tag()){
+			$global_title = single_tag_title('',false);
+		}elseif(is_tax()){
+			$global_title = single_term_title('',false);
+		}elseif(is_author()){
+			$global_title = __("Author: ",'cactusthemes') . get_the_author();
+		}elseif(is_day()){
+			$global_title = __("Archives for ",'cactusthemes') . date_i18n(get_option('date_format') ,strtotime(get_the_date()));
+		}elseif(is_month()){
+			$global_title = __("Archives for ",'cactusthemes') . get_the_date('F, Y');
+		}elseif(is_year()){
+			$global_title = __("Archives for ",'cactusthemes') . get_the_date('Y');
+		}elseif(is_home()){
+			if(get_option('page_for_posts')){ $global_title = get_the_title(get_option('page_for_posts'));
+			}else{
+				$global_title = get_bloginfo('name');
+			}
+		}elseif(is_404()){
+			$global_title = '404!';
+		}else{
+			global $post;
+			if($post)
+				$global_title = $post->post_title;
+		}

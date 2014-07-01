@@ -1,4 +1,6 @@
 <?php
+if (!defined('OUTPUT_THUMBNAIL_SIZE')) define('OUTPUT_THUMBNAIL_SIZE', 'medium');
+
 global $wp_query;
 global $listing_query;
 if($listing_query){
@@ -70,7 +72,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 									<a href="<?php  echo $permalink ?>">
 										<?php
 										if(has_post_thumbnail($post->post_id)){
-											$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_id),'thumb_520x293', true);
+											$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_id),OUTPUT_THUMBNAIL_SIZE, true);
 										}else{
 											$thumbnail[0]=function_exists('tm_get_default_image')?tm_get_default_image():'';
 										}
@@ -91,7 +93,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 									<h3>
                                     	<a href="<?php echo $permalink ?>" rel="<?php $post->post_id; ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                                     </h3>
-									<div class="item-info hidden">
+									<div class="item-info">
 										<?php if(ot_get_option('blog_show_meta_author',1)){ ?>
                                             <span class="item-author"><?php the_author_posts_link(); ?></span>
                                         <?php }
@@ -103,7 +105,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 										</div>
 									</div>
 								</div>
-								<div class="item-content hidden"><?php the_excerpt(); ?></div>
+								<div class="item-content"><?php the_excerpt(); ?></div>
 								<div class="clearfix"></div>
 							</div>
 						</div><!--/col3-->
@@ -170,7 +172,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 							<a href="<?php the_permalink() ?>">
 								<?php
 								if(has_post_thumbnail()){
-									$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'thumb_520x293', true);
+									$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),OUTPUT_THUMBNAIL_SIZE, true);
 								}else{
 									$thumbnail[0]=function_exists('tm_get_default_image')?tm_get_default_image():'';
 								}
@@ -190,7 +192,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 						<div class="item-head">
 							<h3><a href="<?php the_permalink() ?>" rel="<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                             </h3>
-							<div class="item-info hidden">
+							<div class="item-info">
 								<?php if(ot_get_option('blog_show_meta_author',1)){ ?>
                                     <span class="item-author"><?php the_author_posts_link(); ?></span>
                                 <?php }
@@ -202,7 +204,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 								</div>
 							</div>
 						</div>
-						<div class="item-content hidden"><?php the_excerpt(); ?></div>
+						<div class="item-content"><?php the_excerpt(); ?></div>
 						<div class="clearfix"></div>
 					</div>
 				</div><!--/col3-->
@@ -247,7 +249,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 						<a href="<?php the_permalink() ?>">
 							<?php
 							if(has_post_thumbnail()){
-								$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),'thumb_520x293', true);
+								$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(),OUTPUT_THUMBNAIL_SIZE, true);
 							}else{
 								$thumbnail[0]=function_exists('tm_get_default_image')?tm_get_default_image():'';
 							}
@@ -267,7 +269,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 					<div class="item-head">
 						<h3><a href="<?php the_permalink() ?>" rel="<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                         </h3>
-						<div class="item-info hidden">
+						<div class="item-info">
                         <?php if(ot_get_option('blog_show_meta_author',1)){ ?>
 							<span class="item-author"><?php the_author_posts_link(); ?></span>
                         <?php }
@@ -279,7 +281,7 @@ if( (isset($_GET['orderby']) && $orderby=$_GET['orderby']) || ($orderby = ot_get
 							</div>
 						</div>
 					</div>
-					<div class="item-content hidden"><?php the_excerpt(); ?></div>
+					<div class="item-content"><?php the_excerpt(); ?></div>
 					<div class="clearfix"></div>
 				</div>
 			</div><!--/col3-->

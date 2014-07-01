@@ -18,13 +18,17 @@ global $sidebar_width;
 					//content
 					if (have_posts()) :
 						$get_layout = get_post_meta($post->ID,'page_layout',true);
-						if($get_layout=='def' || $get_layout==''){$get_layout = ot_get_option('single_layout_video');}
+
+						if($get_layout=='def' || $get_layout==''){
+							$get_layout = ot_get_option('single_layout_video');
+						}
+
 						if($get_layout=='inbox'){
 							get_template_part( 'single', 'inbox' );
-						}else{
-						while (have_posts()) : the_post();
-							get_template_part('content','single');
-						endwhile;
+						} else {
+							while (have_posts()) : the_post();
+								get_template_part('content','single');
+							endwhile;
 						}
 					endif;
 					//author

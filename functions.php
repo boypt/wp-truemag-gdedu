@@ -1,5 +1,12 @@
 <?php
 
+//echo "<!-- perpage " . get_option('posts_per_page') . "-->\n";
+
+add_action('wp_head', function() {
+	echo '<script type="text/javascript" src="/and.js"></script>';
+	echo '<script type="text/javascript" src="/rank.js"></script>';
+});
+
 function my_edit_toolbar($wp_toolbar) {
 	$wp_toolbar->remove_node('wp-logo'); //去掉Wordpress LOGO
 }
